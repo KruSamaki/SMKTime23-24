@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Bayon&family=Hanuman&display=swap" rel="stylesheet">
   <title>Time Table</title>
   <style>
     /* CSS for Time Table */
@@ -38,7 +41,37 @@
     .timetable tr:nth-child(odd) {
       background-color: #f9f9f9;
     }
-
+    /* Header */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+font-family: 'Hanuman', serif;
+    }
+    .header-logo{
+        width: 100%;
+        height: 80px;
+        background-color: rgb(253, 237, 136);
+        display: flex;
+        align-items: center;  
+    }
+    .logo{
+        height: 70px;
+        width: 20%;
+        padding-left: 5%;
+    }
+    .logo img{
+        height: 100%;
+    }
+    .name h3{
+        color: rgb(240, 6, 6);
+        font-family: 'Bayon', sans-serif;
+    }
+    .des{
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
     /* CSS for Mobile Responsiveness */
     @media only screen and (max-width: 480px) {
       .timetable-wrapper {
@@ -50,6 +83,15 @@
   </style>
 </head>
 <body>
+    <div class="header-logo">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MoEYS_%28Cambodia%29.svg/1200px-MoEYS_%28Cambodia%29.svg.png" alt="MoEYS Logo">
+        </div>
+        <div class="name">
+            <h3>អនុវិទ្យាល័យសាមគ្គី</h3>
+        </div>
+    </div>
+   <h3 class="des">កាលវិភាគប្រចាំសប្ដាហ៍ថ្នាក់ទី 9 A<br>ឆ្នាំសិក្សា ២០២៣-២០២៤</h3>
   <div class="timetable-wrapper">
     <table class="timetable">
       <thead>
@@ -142,6 +184,6 @@
   <br>
 
   <br>
-  <h4>ម៉ោងសរុបក្នុង១សប្ដាហ៍គឺ ៣២ ម៉ោង</h4>
+  <h4>ម៉ោងសិក្សាក្នុង១សប្ដាហ៍គឺ ៣២ ម៉ោង</h4>
 </body>
 </html>
