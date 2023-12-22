@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table</title>
+  <style>
+    /* CSS for Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 180px;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* CSS for Time Table */
+    .timetable-wrapper {
+      overflow-x: auto;
+    }
+
+    .timetable {
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    .timetable th,
+    .timetable td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .timetable th {
+      background-color: #f7f2c1d6;
+    }
+
+    .timetable td:first-child {
+      position: sticky;
+      left: 0;
+      background-color: #f2f2f2;
+    }
+
+    .timetable tr:nth-child(even) {
+      background-color: #eae8e8;
+    }
+
+    .timetable tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+
+    /* CSS for Mobile Responsiveness */
+    @media only screen and (max-width: 480px) {
+      .dropdown-content {
+        position: static;
+        display: block;
+        min-width: inherit;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timetable-wrapper">
+    <table class="timetable">
+      <thead>
+        <tr>
+          <th style="width: 50px;">ម៉ោង</th>
+          <th>ចន្ទ</th>
+          <th>អង្គារ</th>
+          <th>ពុធ</th>
+          <th>ព្រហស្បតិ៍</th>
+          <th>សុក្រ</th>
+          <th>សៅរ៍</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>7h-8h</td>
+          <td class="math">Math</td>
+          <td class="english">English</td>
+          <td class="science">Science</td>
+          <td class="history">History</td>
+          <td class="computer">Computer</td>
+          <td class="pe">Physical Education</td>
+        </tr>
+        <tr>
+          <td>8h-9h</td>
+          <td class="english">English</td>
+          <td class="science">Science</td>
+          <td class="history">History</td>
+          <td class="pe">Physical Education</td>
+          <td class="computer">Computer</td>
+          <td class="math">Math</td>
+        </tr>
+        <tr>
+          <td>9h-10h</td>
+          <td class="science">Science</td>
+          <td class="history">History</td>
+          <td class="pe">Physical Education</td>
+          <td class="math">Math</td>
+          <td class="computer">Computer</td>
+          <td class="english">English</td>
+        </tr>
+        <tr>
+          <td>10h-11h</td>
+          <td class="history">History</td>
+          <td class="pe">Physical Education</td>
+          <td class="math">Math</td>
+          <td class="english">English</td>
+          <td class="computer">Computer</td>
+          <td class="science">Science</td>
+        </tr>
+        <tr>
+          <td>1h-2h</td>
+          <td class="pe">Physical Education</td>
+          <td class="math">Math</td>
+          <td class="english">English</td>
+          <td class="computer">Computer</td>
+          <td class="science">Science</td>
+          <td class="history">History</td>
+        </tr>
+        <tr>
+          <td>2h-3h</td>
+          <td class="math">Math</td>
+          <td class="english">English</td>
+          <td class="computer">Computer</td>
+          <td class="science">Science</td>
+          <td class="history">History</td>
+          <td class="pe">Physical Education</td>
+        </tr>
+        <tr>
+          <td>3h-4h</td>
+          <td class="english">English</td>
+          <td class="computer">Computer</td>
+          <td class="science">Science</td>
+          <td class="history">History</td>
+          <td class="pe">Physical Education</td>
+          <td class="math">Math</td>
+        </tr>
+        <tr>
+          <td>4h-5h</td>
+          <td class="science">Science</td>
+          <td class="computer">Computer</td>
+          <td class="history">History</td>
+          <td class="pe">Physical Education</td>
+          <td class="math">Math</td>
+          <td class="english">English</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <h4>ម៉ោងសរុបក្នុង១សប្ដាហ៍គឺ ៣២ ម៉ោង</h4>
+</body>
+</html>
