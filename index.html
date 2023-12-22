@@ -5,22 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Time Table</title>
   <style>
-    /* CSS for Dropdown */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      z-index: 1;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
     /* CSS for Time Table */
     .timetable-wrapper {
       overflow-x: auto;
@@ -35,12 +19,11 @@
     .timetable th,
     .timetable td {
       padding: 10px;
-      width:fit-content;
+      text-align: left;
     }
 
     .timetable th {
-      background-color: #f7f2c1d6;
-      width:fit-content;
+      background-color: #f2f2f2;
     }
 
     .timetable td:first-child {
@@ -50,7 +33,7 @@
     }
 
     .timetable tr:nth-child(even) {
-      background-color: #eae8e8;
+      background-color: #ffffff;
     }
 
     .timetable tr:nth-child(odd) {
@@ -59,10 +42,13 @@
 
     /* CSS for Mobile Responsiveness */
     @media only screen and (max-width: 480px) {
-      .dropdown-content {
-        position: static;
-        display: block;
-        min-width: inherit;
+      .timetable-wrapper {
+        overflow-x: scroll;
+      }
+
+      .timetable th,
+      .timetable td {
+        white-space: nowrap;
       }
     }
   </style>
@@ -84,79 +70,81 @@
       <tbody>
         <tr>
           <td>7h-8h</td>
-          <td class="math">Math</td>
-          <td class="english">English</td>
-          <td class="science">Science</td>
-          <td class="history">History</td>
-          <td class="computer">Computer</td>
-          <td class="pe">Physical Education</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>Science</td>
+          <td>History</td>
+          <td>Computer</td>
+          <td>Physical Education</td>
         </tr>
         <tr>
           <td>8h-9h</td>
-          <td class="english">English</td>
-          <td class="science">Science</td>
-          <td class="history">History</td>
-          <td class="pe">Physical Education</td>
-          <td class="computer">Computer</td>
-          <td class="math">Math</td>
+          <td>English</td>
+          <td>Science</td>
+          <td>History</td>
+          <td>Physical Education</td>
+          <td>Computer</td>
+          <td>Math</td>
         </tr>
         <tr>
           <td>9h-10h</td>
-          <td class="science">Science</td>
-          <td class="history">History</td>
-          <td class="pe">Physical Education</td>
-          <td class="math">Math</td>
-          <td class="computer">Computer</td>
-          <td class="english">English</td>
+          <td>Science</td>
+          <td>History</td>
+          <td>Physical Education</td>
+          <td>Math</td>
+          <td>Computer</td>
+          <td>English</td>
         </tr>
         <tr>
           <td>10h-11h</td>
-          <td class="history">History</td>
-          <td class="pe">Physical Education</td>
-          <td class="math">Math</td>
-          <td class="english">English</td>
-          <td class="computer">Computer</td>
-          <td class="science">Science</td>
+          <td>History</td>
+          <td>Physical Education</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>Computer</td>
+          <td>Science</td>
         </tr>
         <tr>
-          <td>1h-2h</td>
-          <td class="pe">Physical Education</td>
-          <td class="math">Math</td>
-          <td class="english">English</td>
-          <td class="computer">Computer</td>
-          <td class="science">Science</td>
-          <td class="history">History</td>
+          <td>1h-2h (Evening)</td>
+          <td>Physical Education</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>Computer</td>
+          <td>Science</td>
+          <td>History</td>
         </tr>
         <tr>
-          <td>2h-3h</td>
-          <td class="math">Math</td>
-          <td class="english">English</td>
-          <td class="computer">Computer</td>
-          <td class="science">Science</td>
-          <td class="history">History</td>
-          <td class="pe">Physical Education</td>
+          <td>2h-3h (Evening)</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>Computer</td>
+          <td>Science</td>
+          <td>History</td>
+          <td>Physical Education</td>
         </tr>
         <tr>
-          <td>3h-4h</td>
-          <td class="english">English</td>
-          <td class="computer">Computer</td>
-          <td class="science">Science</td>
-          <td class="history">History</td>
-          <td class="pe">Physical Education</td>
-          <td class="math">Math</td>
+          <td>3h-4h (Evening)</td>
+          <td>English</td>
+          <td>Computer</td>
+          <td>Science</td>
+          <td>History</td>
+          <td>Physical Education</td>
+          <td>Math</td>
         </tr>
         <tr>
-          <td>4h-5h</td>
-          <td class="science">Science</td>
-          <td class="computer">Computer</td>
-          <td class="history">History</td>
-          <td class="pe">Physical Education</td>
-          <td class="math">Math</td>
-          <td class="english">English</td>
+          <td>4h-5h (Evening)</td>
+          <td>Science</td>
+          <td>Computer</td>
+          <td>History</td>
+          <td>Physical Education</td>
+          <td>Math</td>
+          <td>English</td>
         </tr>
       </tbody>
     </table>
   </div>
+  <br>
+
   <br>
   <h4>ម៉ោងសរុបក្នុង១សប្ដាហ៍គឺ ៣២ ម៉ោង</h4>
 </body>
