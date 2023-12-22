@@ -1,189 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" type="image/png"
+        href="https://t4.ftcdn.net/jpg/05/17/23/95/360_F_517239518_PUEfknsnmbUQGVDT0mFKj9A1AvCUL4ML.webp">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Bayon&family=Hanuman&display=swap" rel="stylesheet">
-  <title>Time Table</title>
-  <style>
-    /* CSS for Time Table */
-    .timetable-wrapper {
-      overflow-x: auto;
-    }
-
-    .timetable {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    .timetable th,
-    .timetable td {
-      padding: 10px;
-      text-align: left;
-    }
-
-    .timetable th {
-      background-color: #f2f2f2;
-    }
-
-    .timetable td:first-child,.timetable th:first-child {
-      position: sticky;
-      left: 0;
-      background-color: #f2f2f2;
-    }
-
-    .timetable tr:nth-child(even) {
-      background-color: #ffffff;
-    }
-
-    .timetable tr:nth-child(odd) {
-      background-color: #f9f9f9;
-    }
-    /* Header */
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-font-family: 'Hanuman', serif;
-    }
-    .header-logo{
-        width: 100%;
-        height: 80px;
-        background-color: rgb(253, 237, 136);
-        display: flex;
-        align-items: center;  
-    }
-    .logo{
-        height: 70px;
-        width: 20%;
-        padding-left: 5%;
-    }
-    .logo img{
-        height: 100%;
-    }
-    .name h3{
-        color: rgb(240, 6, 6);
-        font-family: 'Bayon', sans-serif;
-    }
-    .des{
-        margin: auto;
-        align-items: center;
-        text-align: center;
-    }
-    /* CSS for Mobile Responsiveness */
-    @media only screen and (max-width: 480px) {
-      .timetable-wrapper {
-        overflow-x: scroll;
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300&display=swap" rel="stylesheet">
+    <title>LangdyApps</title>
+    <style>
+      *{
+        font-family: 'Battambang', sans-serif;
       }
-
-    
-    }
-  </style>
+      .title img{
+        width: 80px;
+      }
+    </style>
 </head>
-<body>
-    <div class="header-logo">
-        <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MoEYS_%28Cambodia%29.svg/1200px-MoEYS_%28Cambodia%29.svg.png" alt="MoEYS Logo">
-        </div>
-        <div class="name">
-            <h3>អនុវិទ្យាល័យសាមគ្គី</h3>
-        </div>
-    </div>
-   <h3 class="des">កាលវិភាគប្រចាំសប្ដាហ៍ថ្នាក់ទី 9 A<br>ឆ្នាំសិក្សា ២០២៣-២០២៤</h3>
-  <div class="timetable-wrapper">
-    <table class="timetable">
-      <thead>
-        <tr>
-          <th>ម៉ោង</th>
-          <th>ចន្ទ</th>
-          <th>អង្គារ</th>
-          <th>ពុធ</th>
-          <th>ព្រហស្បតិ៍</th>
-          <th>សុក្រ</th>
-          <th>សៅរ៍</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>7h-8h</td>
-          <td>Math</td>
-          <td>English</td>
-          <td>Science</td>
-          <td>History</td>
-          <td>Computer</td>
-          <td>Physical Education</td>
-        </tr>
-        <tr>
-          <td>8h-9h</td>
-          <td>English</td>
-          <td>Science</td>
-          <td>History</td>
-          <td>Physical Education</td>
-          <td>Computer</td>
-          <td>Math</td>
-        </tr>
-        <tr>
-          <td>9h-10h</td>
-          <td>Science</td>
-          <td>History</td>
-          <td>Physical Education</td>
-          <td>Math</td>
-          <td>Computer</td>
-          <td>English</td>
-        </tr>
-        <tr>
-          <td>10h-11h</td>
-          <td>History</td>
-          <td>Physical Education</td>
-          <td>Math</td>
-          <td>English</td>
-          <td>Computer</td>
-          <td>Science</td>
-        </tr>
-        <tr>
-          <td>1h-2h (Evening)</td>
-          <td>Physical Education</td>
-          <td>Math</td>
-          <td>English</td>
-          <td>Computer</td>
-          <td>Science</td>
-          <td>History</td>
-        </tr>
-        <tr>
-          <td>2h-3h (Evening)</td>
-          <td>Math</td>
-          <td>English</td>
-          <td>Computer</td>
-          <td>Science</td>
-          <td>History</td>
-          <td>Physical Education</td>
-        </tr>
-        <tr>
-          <td>3h-4h (Evening)</td>
-          <td>English</td>
-          <td>Computer</td>
-          <td>Science</td>
-          <td>History</td>
-          <td>Physical Education</td>
-          <td>Math</td>
-        </tr>
-        <tr>
-          <td>4h-5h (Evening)</td>
-          <td>Science</td>
-          <td>Computer</td>
-          <td>History</td>
-          <td>Physical Education</td>
-          <td>Math</td>
-          <td>English</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <br>
 
-  <br>
-  <h4>ម៉ោងសិក្សាក្នុង១សប្ដាហ៍គឺ ៣២ ម៉ោង</h4>
+<body>
+    <div class="title">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MoEYS_%28Cambodia%29.svg/1200px-MoEYS_%28Cambodia%29.svg.png" alt="">
+        <h1>សាលាអនុវិទ្យាល័យសាមគ្គី</h1>
+        <h2>កាលវិភាគប្រចាំសប្ដាហ៍តាមថ្នាក់នីមួយៗ</h2>
+        <h4>Supported by Phearoth🌺</h4>
+    </div>
+    <div class="button-container">
+        <a href="T9A.html" class="b1">
+            <div class="button-item">
+                <i class="fa fa-home"></i>
+                <span class="button-title">ថ្នាក់ទី 9 A</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/5246/5246283.png" alt="">
+            </div>
+        </a>
+        <a href="showQA.html" class="b2">
+            <div class="button-item">
+                <i class="fa fa-search"></i>
+                <span class="button-title">ថ្នាក់ទី 9 B</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/3557/3557755.png" alt="">
+            </div>
+        </a>
+        <!-- <a href="comingsoon.html" class="b3">
+            <div class="button-item">
+                <i class="fa fa-envelope"></i>
+                <span class="button-title">មតិកែលម្អ</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/2038/2038898.png" alt="">
+            </div>
+        </a>
+        <a href="developer.html" class="b4">
+            <div class="button-item">
+                <i class="fa fa-user"></i>
+                <span class="button-title">អ្នករៀបចំ</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/4661/4661320.png" alt="">
+            </div>
+        </a>
+        <a href="https://mylangdy11.github.io/testguess/" class="b5">
+            <div class="button-item">
+                <i class="fa fa-cog"></i>
+                <span class="button-title">ល្បងប្រាជ្ញារូបភាព</span>
+                <img src="https://lh3.googleusercontent.com/AWL-hIqupfJuUKQgVT4x07y0kSvI-8I9sg1Z6NdE4sRN0EbFyVRJVrXhDWSw_gy19mQ3"
+                    alt="">
+            </div>
+        </a>
+        <a href="comingsoon.html" class="b6">
+            <div class="button-item">
+                <i class="fa fa-info"></i>
+                <span class="button-title">មកដល់ឆាប់ៗ...</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/5581/5581197.png" alt="">
+            </div>
+    </div>
+    </a> -->
+
 </body>
+
 </html>
