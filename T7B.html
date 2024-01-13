@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Bayon&family=Hanuman&display=swap" rel="stylesheet">
+  <title>LangdyApps</title>
+  <style>
+     /* Table Styles */
+     .table-container {
+      overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      background-color: #f2f2f2;
+    }
+
+    th:first-child,
+    td:first-child {
+      position: sticky;
+      left: 0;
+      background-color: #f2f2f2;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 600px) {
+      th,
+      td {
+        white-space: nowrap;
+        font-size: 12px;
+      }
+    }
+ 
+    table tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    table tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+    /* Header */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+font-family: 'Hanuman', serif;
+    }
+    .header-logo{
+        width: 100%;
+        height: 80px;
+        background-color: rgb(253, 237, 136);
+        display: flex;
+        align-items: center;  
+    }
+    .logo{
+        height: 70px;
+        width: 20%;
+        padding-left: 5%;
+    }
+    .logo img{
+        height: 100%;
+    }
+    .name h3{
+        color: rgb(240, 6, 6);
+        font-family: 'Bayon', sans-serif;
+    }
+    .des{
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+    /* CSS for Mobile Responsiveness */
+    @media only screen and (max-width: 480px) {
+      .timetable-wrapper {
+        overflow-x: scroll;
+      }
+
+    
+    }
+    *{
+        font-family: 'Battambang', sans-serif;
+      }
+      .title img{
+        width: 80px;
+        
+      }
+      .title{
+        text-align: center;
+      }
+      .namefix{
+        position: sticky;
+        top:0;
+        z-index: 100;
+        background-color: #ffffff;
+      }
+  </style>
+</head>
+<body>
+  <div class="title" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MoEYS_%28Cambodia%29.svg/1200px-MoEYS_%28Cambodia%29.svg.png" alt="">
+    <h1 class="namefix" style="font-size: 24px;">សាលាអនុវិទ្យាល័យសាមគ្គី</h1>
+    <!-- <h2 style="font-size: 20px;">កាលវិភាគប្រចាំសប្ដាហ៍តាមថ្នាក់នីមួយៗ</h2> -->
+    <h4>អាសយដ្ឋាន ភូមិចំការចេក ឃុំស៊ុង ស្រុកសំឡូត ខេត្តបាត់ដំបង</h4>
+</div>
+    <!-- <div class="header-logo">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MoEYS_%28Cambodia%29.svg/1200px-MoEYS_%28Cambodia%29.svg.png" alt="MoEYS Logo">
+        </div>
+        <div class="name">
+            <h3>អនុវិទ្យាល័យសាមគ្គី</h3>
+        </div>
+    </div> -->
+   <h3 class="des">កាលវិភាគប្រចាំសប្ដាហ៍ថ្នាក់ទី 7 B<br>ឆ្នាំសិក្សា ២០២៣-២០២៤<br>គ្រូបន្ទុកថ្នាក់ លោកគ្រូ កែន សារ៉ាយ</h3>
+   <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ម៉ោង</th>
+          <th>ចន្ទ</th>
+          <th>អង្គារ</th>
+          <th>ពុធ</th>
+          <th>ព្រហស្បតិ៍</th>
+          <th>សុក្រ</th>
+          <th>សៅរ៍</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>7h-8h(ព្រឹក)</td>
+          <td>គណិតវិទ្យា</td>
+          <td>អង់គ្លេស</td>
+          <td>X</td>
+          <td>ភាសាខ្មែរ</td>
+          <td>អប់រំកាយ</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>8h-9h(ព្រឹក)</td>
+          <td>គណិតវិទ្យា</td>
+          <td>អង់គ្លេស</td>
+          <td>X</td>
+          <td>ភាសាខ្មែរ</td>
+          <td>X</td>
+          <td>ពលកម្ម</td>
+        </tr>
+        <tr>
+          <td>9h-10h(ព្រឹក)</td>
+          <td>ប្រវត្តិវិទ្យា</td>
+          <td>អប់រំកាយ</td>
+          <td>បំណិនជីវិត</td>
+          <td>ភូមិវិទ្យា</td>
+          <td>គណិតវិទ្យា</td>
+          <td>ពលកម្ម</td>
+        </tr>
+        <tr>
+          <td>10h-11h(ព្រឹក)</td>
+          <td>ប្រវត្តិវិទ្យា</td>
+          <td>X</td>
+          <td>បំណិនជីវិត</td>
+          <td>គីមីវិទ្យា</td>
+          <td>គណិតវិទ្យា</td>
+          <td>X</td>
+        </tr>
+        <hr>
+        <tr style="border-top: 1px solid black;">
+          <td>1h-2h (រសៀល)</td>
+          <td>X</td>
+          <td>សីលធម៌</td>
+          <td>ជីវវិទ្យា</td>
+          <td>ភាសាខ្មែរ</td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>2h-3h(រសៀល)</td>
+          <td>X</td>
+          <td>សីលធម៌</td>
+          <td>ជីវវិទ្យា</td>
+          <td>ភាសាខ្មែរ</td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>3h-4h(រសៀល)</td>
+          <td>អង់គ្លេស</td>
+          <td>គណិតវិទ្យា</td>
+          <td>ភាសាខ្មែរ</td>
+          <td>រូបវិទ្យា</td>
+          <td>ផែនដី</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>4h-5h(រសៀល)</td>
+          <td>អង់គ្លេស</td>
+          <td>គណិតវិទ្យា</td>
+          <td>ភាសាខ្មែរ</td>
+          <td>រូបវិទ្យា</td>
+          <td>គេហវិទ្យា</td>
+          <td>X</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+
+  <br>
+  <h4>facebook page: អនុវិទ្យាល័យ សាមគ្គី</h4>
+  <img style="width: 100px"src="img/qr facebook page.png"/>
+</body>
+</html>
